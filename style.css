@@ -1,0 +1,115 @@
+img {
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+/* CSS files add styling rules to your content */
+
+body {
+    background-color: #180530;
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
+}
+
+h1 {
+    margin-top: 20%;
+    font-size: 400%;
+    font-family: "VT323";
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.title {
+    font-family: "VT323";
+    font-size: 400%;
+}
+
+h1:hover {
+    margin-top: 20%;
+    font-size: 400%;
+    font-family: "VT323";
+    font-style: italic;
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 5%;
+    color: #FFFFFF;
+}
+
+a:link {
+    font-size: 150%;
+    font-family: "VT323";
+    color: #3febff;
+    text-decoration: none;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: #3febff;
+    text-decoration: none;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    /*color: #FFFFFF;*/
+    /* text-decoration: overline;
+     */
+    font-weight: bold;
+    text-decoration: none;
+    /*background-color: #ff0077;*/
+    color: #FF0077;
+    background-color: yellow;
+}
+
+
+/* selected link */
+
+a:active {
+    color: yellow;
+    font-weight: bold;
+}
+
+body {
+    height: 100%;
+    margin: 0
+}
+
+.main {
+    height: 100vh;
+}
+
+.bounce {
+    -moz-animation: bounce 3.5 infinite;
+    -webkit-animation: bounce 3.5s infinite;
+    animation: bounce 3.5s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateY(15px);
+    }
+}
+
+.text {
+    font-family: "Karla";
+    font-size: 100%;
+    color: #FFFFFF;
+    margin-right: 20%;
+    margin-left: 20%;
+    text-align: justify;
+    font-weight: 300;
+}
