@@ -1,117 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Athiya Deviyani</title>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
-    <style>
-        h1 {
-            font-family: "Viga";
-            color: #4cb2ce;
-            font-size: 280%;
-            font-weight: bold;
-            margin-right: 25%;
-            margin-left: 6%;
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links
+            $("a").on('click', function(event) {
+
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 1250, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+    </script>
+    <script>
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.fontSize = "30px";
+            } else {
+                document.getElementById("header").style.fontSize = "90px";
+            }
         }
-        
-        h2 {
-            font-family: "Homemade Apple";
-            color: #000000;
-            font-size: 200%;
-            margin-right: 25%;
-            margin-top: 2%;
-            margin-left: 7%;
-        }
-        
-        h3 {
-            font-family: "Karla";
-            color: #999999;
-            font-size: 80%;
-        }
-        
-        p {
-            font-family: "Karla";
-            font-size: 85%;
-            color: #383838;
-            margin-right: 25%;
-            margin-left: 6%;
-            text-align: justify;
-            font-weight: 300;
-        }
-        
-        a:link {
-            font-size: 100%;
-            font-family: "Viga";
-            color: #4cb2ce;
-            text-decoration: none;
-        }
-        /* visited link */
-        
-        a:visited {
-            color: #4cb2ce;
-            text-decoration: none;
-        }
-        /* mouse over link */
-        
-        a:hover {
-            color: #FFFFFF;
-            /* text-decoration: overline; */
-            font-weight: bold;
-            text-decoration: none;
-            background-color: #ff0077;
-        }
-        /* selected link */
-        
-        a:active {
-            color: yellow;
-            font-weight: bold;
-        }
-        
-        .topcorner {
-            position: absolute;
-            top: 0;
-            right: 0;
-        }
-    </style>
+    </script>
 </head>
 
 <body>
-    <div align="left">
-        <div class="topcorner">
 
-            <h3>
-        <a href="https://www.linkedin.com/in/athiyadeviyani/">LinkedIn</a> &nbsp; | &nbsp; <a href="https://devpost.com/athiyadeviyani">Devpost</a> &nbsp; | &nbsp; <a href="https://github.com/athiyadeviyani">GitHub</a> &nbsp; | &nbsp; <a href="https://drive.google.com/file/d/1QYBG57s0fYHf77QpXYc3Qa4QlR8aVwbO/view?usp=sharing">CV</a> &nbsp; | &nbsp; <a href="mailto:athiyadee@gmail.com">Email</a> &nbsp; &nbsp; &nbsp;
-        </h3> </div>
-        <h1>
-          <a href="https://athiyadeviyani.github.io">Hello!</a></h1>
+    <div align="center" class="main">
+        <a id="top" class="smooth" style="color:#180530"> top_anchor</a>
 
+        <!--<img src="https://i.imgur.com/zjXlySb.png" height="20%" width="20%">-->
+        <h1>ATHIYA DEVIYANI</h1>
         <p>
-            My name is Athiya Deviyani, but you can call me Tia.
+
+            <a href="https://www.linkedin.com/in/athiyadeviyani/">LinkedIn</a> &nbsp; | &nbsp; <a href="https://devpost.com/athiyadeviyani">Devpost</a> &nbsp; | &nbsp; <a href="https://github.com/athiyadeviyani">GitHub</a> &nbsp; | &nbsp; <a href="https://drive.google.com/file/d/1QYBG57s0fYHf77QpXYc3Qa4QlR8aVwbO/view?usp=sharing">CV</a> &nbsp; | &nbsp; <a href="mailto:athiyadee@gmail.com">Email</a>
+        </p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div class="bounce"><a href="#about" style="color:#FF0077;font-size: 200%; margin-top:100px">⤓</a></div>
+
+    </div>
+    <div id="page1">
+        <a id="about" class="smooth"></a>
+
+        <div class="text">
+
+            <div class="title">
+                Hello!
+            </div>
+            <br>
+            <br> My name is Athiya Deviyani, but you can call me Tia.
             <br>
             <br> I'm still working on this website. In the mean time, let me tell you a bit about myself.
             <br>
             <br> I am a second year Artificial Intelligence and Computer Science student at The University of Edinburgh.
             <br>
-            <br> I am currently developing the website for the <a href="https://www.ppiedinburgh.org">Indonesian Students’ Association in Edinburgh</a>. My work focuses on the functionality of the website as well as the aesthetics, which means I do have quite a good eye for visual design. But don’t take my word for it, here’s my <a href="https://sway.office.com/moRCnz2QoO2xjGOa?ref=Link&loc=play">visual design portfolio</a>.
+            <br> I am currently developing the website for the <a href="https://www.ppiedinburgh.org" style="font-size: 150%;">Indonesian Students’ Association in Edinburgh</a>. My work focuses on the functionality of the website as well as the aesthetics, which means I do have quite a good eye for visual design. But don’t take my word for it, here’s my <a href="https://sway.office.com/moRCnz2QoO2xjGOa?ref=Link&loc=play" style="font-size: 150%;">visual design portfolio</a>.
             <br>
-            <br> But I’ve worked on other projects as well, like the <a href="https://athiyadeviyani.github.io/PunGenerator/">Pun Generator</a> that I’ve been showing around to literally everyone. Last summer, I also worked on a <a href="https://github.com/athiyadeviyani/FacialRecognition">Facial Recognition System</a> for The Body Shop Indonesia, and I was really proud of how it turned out. You can also check out what I'm currently working on <a href="https://www.github.com/athiyadeviyani">here</a>.
+            <br> But I’ve worked on other projects as well, like the <a href="https://athiyadeviyani.github.io/PunGenerator/" style="font-size: 150%;">Pun Generator</a> that I’ve been showing around to literally everyone. Last summer, I also worked on a <a href="https://github.com/athiyadeviyani/FacialRecognition" style="font-size: 150%;">Facial Recognition System</a> for The Body Shop Indonesia, and I was really proud of how it turned out. You can also check out what I'm currently working on <a href="https://www.github.com/athiyadeviyani" style="font-size: 150%;">here</a>.
             <br>
-            <br> Most of the other projects I worked on are usually for <a href="https://devpost.com/athiyadeviyani">hackathons</a> - made under 36 hours with a lot of sugar and caffeine, and of course, my love for programming. If anyone can pull an all nighter and smash it, that would be me.
+            <br> Most of the other projects I worked on are usually for <a href="https://devpost.com/athiyadeviyani" style="font-size: 150%;">hackathons</a> - made under 36 hours with a lot of sugary drinks and caffeine, and of course, my love for programming. If anyone can pull an all nighter and smash it, that would be me. Speaking of hackathons, I’m actually organizing one in 2019! Do <a href="https://hacktheburgh.com/" style="font-size: 150%;">check it out</a> if you’re interested. I promise it would be fun ;)
             <br>
-            <br> Hey speaking of hackathons, I’m actually organizing one for next year! Do <a href="https://hacktheburgh.com/">check it out</a> if you’re interested. I promise it would be fun ;)
+            <br> Well that’s my brief introduction. If you're more into formal introductions, here's my <a href="https://drive.google.com/file/d/1QYBG57s0fYHf77QpXYc3Qa4QlR8aVwbO/view?usp=sharing" style="font-size: 150%;">CV</a>. If you clicked on it, might as well make it official - connect with me on <a href="https://www.linkedin.com/in/athiyadeviyani/" style="font-size: 150%;">LinkedIn</a>!
             <br>
-            <br> Well that’s my brief introduction. If you're more into formal introductions, here's my <a href="https://drive.google.com/file/d/1QYBG57s0fYHf77QpXYc3Qa4QlR8aVwbO/view?usp=sharing">CV</a>. If you clicked on it, might as well make it official - connect with me on <a href="https://www.linkedin.com/in/athiyadeviyani/">LinkedIn</a>!
+            <br> Anything else? I'll be happy to <a href="mailto:athiyadee@gmail.com" style="font-size: 150%;">talk</a> anytime.
             <br>
-            <br> Anything else? I'll be happy to <a href="mailto:athiyadee@gmail.com">talk</a> anytime.
             <br>
-            <br> Cheers,
-        </p>
-        <h2>tia</h2>
+          
+            <a href="#top">
+                <div style="font-size:150%" align="right">
+                    ⤒
+                </div>
+            </a>
+
+            <div style="font-size: 70%; color:#FF0077">
+                © Athiya Deviyani | e-mail: hello [at] athiyadeviyani [dot] com
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
 
     </div>
+
+    <script src="https://button.glitch.me/button.js"></script>
+  
 </body>
 
 </html>
