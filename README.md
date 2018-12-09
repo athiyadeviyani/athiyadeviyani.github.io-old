@@ -4,7 +4,8 @@ Deployed on netlify, hosted on GitHub pages.
 
 Links
 <br>https://www.athiyadeviyani.com/ 
-<br>https://athiyadee.glitch.me/
+<br>https://athiyadeviyani.github.io/
 
 Older version
-<br>https://athiyadeviyani.github.io/
+<br>https://athiyadee.glitch.me/
+
