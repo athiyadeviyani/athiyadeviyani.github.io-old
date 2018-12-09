@@ -1,10 +1,8 @@
 # athiyadeviyani.github.io
-Deployed on netlify.
+Deployed on netlify, hosted on GitHub pages.
+<p>Designed from scratch by yours truly.
 
 Links
-
-https://www.athiyadeviyani.com/
-
-https://athiyadee.glitch.me/
-
-https://athiyadeviyani.github.io/
+<br>https://www.athiyadeviyani.com/ 
+<br>https://athiyadee.glitch.me/
+<br>https://athiyadeviyani.github.io/
