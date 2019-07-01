@@ -8,5 +8,5 @@ Links
 <br>https://athiyadeviyani.github.io/
 
 Older version
-<br>https://athiyadee.glitch.me/
-<br>http://tia-website-2.glitch.me/ (Terminated July 1st, 2019)
+<br>https://athiyadee.glitch.me/ (Terminated 9 December 2018)
+<br>http://tia-website-2.glitch.me/ (Terminated 1 July 2019)
