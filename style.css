@@ -1,115 +1,208 @@
-img {
-    border-radius: 50%;
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-
 /* CSS files add styling rules to your content */
 
-body {
-    background-color: #180530;
-    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-    margin: 2em;
+p, h1, h2, h3, h4, span {
+  font-family: "Barlow";
+  font-weight: 300; 
 }
 
-h1 {
-    margin-top: 20%;
-    font-size: 400%;
-    font-family: "VT323";
-    font-weight: bold;
-    color: #FFFFFF;
+body.dark-mode {
+  background-color: #000;
+  color: #fff;
 }
 
-.title {
-    font-family: "VT323";
-    font-size: 400%;
-}
-
-h1:hover {
-    margin-top: 20%;
-    font-size: 400%;
-    font-family: "VT323";
-    font-style: italic;
-    text-decoration: underline;
-}
-
-p {
-    margin-bottom: 5%;
-    color: #FFFFFF;
-}
-
-a:link {
-    font-size: 150%;
-    font-family: "VT323";
-    color: #3febff;
-    text-decoration: none;
-}
-
-
-/* visited link */
-
-a:visited {
-    color: #3febff;
-    text-decoration: none;
-}
-
-
-/* mouse over link */
-
-a:hover {
-    /*color: #FFFFFF;*/
-    /* text-decoration: overline;
-     */
-    font-weight: bold;
-    text-decoration: none;
-    /*background-color: #ff0077;*/
-    color: #FF0077;
-    background-color: yellow;
-}
-
-
-/* selected link */
-
-a:active {
-    color: yellow;
-    font-weight: bold;
+body.light-mode {
+  background-color: #fff;
+  color: #000;
 }
 
 body {
-    height: 100%;
-    margin: 0
+  scroll-behavior: smooth;
+  background-color: #fff;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.switch {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 4%;
+  right: 2%;
+}
+
+.st {
+  font-weight: 300;
+}
+
+.st:hover {
+  font-weight: 700;
+}
+
+.link {
+  font-weight: 700;
+  color: #00aacc;
+}
+
+.link:hover {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: yellow;
+  background-color: #FF0077;
+  font-weight: 700;
+}
+
+.link1 {
+  font-weight: 700;
+
+}
+
+.link1:hover {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  background-color: #c40000;
+}
+
+
+#tia1:hover #tia2:after {
+  content: "Athiya Deviyani";
+  font-weight: 500;
+}
+#tia1:hover #tia2:before {
+  content: "";
+  font-weight: 500;
+}
+#tia2:before {
+  content: "Tia";
+  font-weight: 500;
+}
+
+
+.eukbc:hover:after {
+  white-space: pre-wrap;
+  content: '\A British National Championships (2019) \A #BleedGreen \A';
+  background-color: #35602C;
+  color: #fff;
+  font-weight: 500;
+}
+
+.orchestra:hover:after {
+  white-space: pre-wrap;
+  content: '\A Edinburgh University Sinfonia Orchestra (2018) \A Composers\' Orchestra (2017) \A';
+  background-color: #A50034;
+  color: #fff;
+  font-weight: 500;
+  font-size: 3.5vw;
+  line-height: 4vw;
+}
+
+.volunteering:hover:after {
+  white-space: pre-wrap;
+  content: '\A InfPALS Leader (2018-2019) \A Hoppers\' Interview Coach (2019-2020) \A';
+  background-color: #00aacc;
+  color: #fff;
+  font-weight: 500;
+  font-size: 4vw;
+}
+
+.twentynineteen:hover:after {
+    content:' (2019)';
+    font-weight:700;
+}
+
+.twentyeighteen:hover:after {
+    content:' (2018)';
+    font-weight:700;
+}
+
+.twentytwentyone:hover:after {
+    white-space: pre-wrap;
+    content:' #ClassOf2021 ';
+    background-color: #35602C;
+    color: #fff;
+    font-weight:700;
+    paddingright: 5vw;
+  
+}
+.tia:hover:before{
+    content: '';
+    font-weight:500;
+}
+
+.tia:hover:after {
+    content:'';
+    font-weight:500;
+}
+
+.all {
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh; 
+  right: 0em;
+  left: 0em;
+  margin-bottom:2em;
 }
 
 .main {
-    height: 100vh;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
-.bounce {
-    -moz-animation: bounce 3.5 infinite;
-    -webkit-animation: bounce 3.5s infinite;
-    animation: bounce 3.5s infinite;
+.bigtext{
+  font-size: 8vw;
 }
 
-@keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-    60% {
-        transform: translateY(15px);
-    }
+.smalltext{
+  font-size: 5vw;
+  LINE-HEIGHT:6vw;
+  align="justify";
 }
 
-.text {
-    font-family: "Karla";
-    font-size: 100%;
-    color: #FFFFFF;
-    margin-right: 20%;
-    margin-left: 20%;
-    text-align: justify;
-    font-weight: 300;
+.smallishtext{
+  font-size: 4vw;
+  LINE-HEIGHT:5vw;
+  align="justify";
+}
+
+.smallertext{
+  font-size: 2.25vw;
+  LINE-HEIGHT: 3.25vw;
+  align="justify";
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  position: absolute;
+  font-family: "Barlow";
+  font-weight: 300;
+  font-size: 5vw;
+  border-radius: 50%;
+  align: center;
+  display: inline-block;
+  padding-left: 3%;
+  padding-right: 3%;
+  bottom: 0px;
+}
+
+/* Position the "next button" to the right */
+
+.prev {
+  position: absolute;
+  left: 3%;
+}
+.next {
+  position: absolute;
+  right: 3%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  font-weight: 900;
 }
