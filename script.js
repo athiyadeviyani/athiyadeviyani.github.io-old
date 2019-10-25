@@ -10,6 +10,25 @@ function toggleDarkLight() {
 var slideIndex = 1;
 showSlides(slideIndex);
 
+document.onkeydown = checkKey;
+
+function checkKey(e) {
+
+    e = e || window.event;
+
+    if (e.keyCode == '37' && slideIndex != 1) {
+      // left keypress
+      plusSlides(-1);
+      console.log(slideIndex);
+    }
+    else if (e.keyCode == '39' && slideIndex != 8) {
+      // right keypress
+      plusSlides(1);
+      console.log(slideIndex);
+    }
+
+}
+
 function plusSlides(n) {
     if (n == "1") {
       document.getElementById('work').className = 'main w3-animate-right';
