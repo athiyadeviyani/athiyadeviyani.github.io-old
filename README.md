@@ -4,6 +4,7 @@ Deployed on netlify, hosted on GitHub pages.
 
 Links
 <br>https://www.athiyadeviyani.com/ 
+<br>https://tia.codes/ 
 <br>https://athiyadeviyani.github.io/
 <br>https://tia-website.glitch.me/ (glitch link in case anyone wants to remix it)
 
