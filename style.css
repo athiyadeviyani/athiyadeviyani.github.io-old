@@ -113,7 +113,7 @@ a {
     font-weight:700;
 }
 
-twentynineteentwenty:hover:after {
+.twentynineteentwenty:hover:after {
     content:' (2019, 2020)';
     font-weight:700;
 }
