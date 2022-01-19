@@ -119,3 +119,4 @@ function addLeft() {
   document.getElementById('interests').className += ' w3-animate-left';
   document.getElementById('contact').className += ' w3-animate-left';
 }
+
