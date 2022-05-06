@@ -22,26 +22,27 @@ p {
 
 a {
   font-size: 0.9rem;
-  color: #00008B;
+  color: #3c027d;
   text-decoration: none;
 }
 
 a:visited {
   font-size: 0.9rem;
-  color: #00008B;
+  color: #3c027d;
   text-decoration: none;
 }
 
 a:active {
   font-size: 0.9rem;
-  color: #00008B;
+  color: #3c027d;
   text-decoration: none;
 }
 
 a:hover {
   font-size: 0.9rem;
-  color: #00008B;
-  font-weight: bold;
+  background-color: #3c027d;
+  color: #ffffff;
+/*   font-weight: bold; */
 }
 
 img {
@@ -53,9 +54,9 @@ img {
 
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #FFFFFF;
+/*   --color-bg: #FFFFFF;
   --color-text-main: #000000;
-  --color-primary: #FFFF00;
+  --color-primary: #FFFF00; */
   --wrapper-height: 87vh;
   --image-max-width: 300px;
   --image-margin: 3rem;
@@ -93,8 +94,15 @@ END Glitch hello-app default styles
 ******************************************************************************/
 
 body {
-  font-family: HK Grotesk;
-  background-color: var(--color-bg);
+  font-family: "HK Grotesk", sans-serif;
+  background-color: #ffffff;
+  color: #434343;
+}
+
+
+.dark-mode {
+  background-color: black;
+  color: white;
 }
 
 /* Page structure */
@@ -114,7 +122,7 @@ body {
 /* Very light scaling for our illustration */
 .title {
   color: #000000;
-  font-family: HK Grotesk;
+  font-family: "HK Grotesk", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 100px;
