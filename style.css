@@ -40,9 +40,10 @@ a:active {
 
 a:hover {
   font-size: 0.9rem;
-  background-color: #3c027d;
-  color: #ffffff;
-/*   font-weight: bold; */
+/*   background-color: #3c027d; */
+/*   color: #ffffff; */
+  color: #3c027d;
+  font-weight: bold;
 }
 
 img {
