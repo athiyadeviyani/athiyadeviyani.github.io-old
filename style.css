@@ -22,19 +22,19 @@ p {
 
 a {
   font-size: 0.9rem;
-  color: #3c027d;
+  color: #4285f4;
   text-decoration: none;
 }
 
 a:visited {
   font-size: 0.9rem;
-  color: #3c027d;
+  color: #4285f4;
   text-decoration: none;
 }
 
 a:active {
   font-size: 0.9rem;
-  color: #3c027d;
+  color: #4285f4;
   text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ a:hover {
   font-size: 0.9rem;
 /*   background-color: #3c027d; */
 /*   color: #ffffff; */
-  color: #3c027d;
+  color: #4285f4;
   font-weight: bold;
 }
 
